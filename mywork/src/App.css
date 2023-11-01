@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+.color{
+  background-color: aqua;
+  color: antiquewhite;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+.card1{
+  height: 50px;
+  width: 50px;
+}
+.primery{
+  background-color: #333;
+  color: aliceblue;
+  width: 50px;
+  height: 50px;
+
+}
+.txt{
+  size: 20px;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+}
