@@ -83,3 +83,11 @@ nav a:hover {
   font-size: medium;
   font-family: 'Courier New', Courier, monospace;
 }
+.liStyle{
+  background-color: gold;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+}

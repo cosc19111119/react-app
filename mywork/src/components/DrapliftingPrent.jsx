@@ -1,9 +1,9 @@
 import { useState } from "react"
 import DrapliftingChild from "./DrapliftingChild"
-
+import CheckLengthAry from "./CheckLengthAry"
 
 function DrapliftingPrent() {
-    const [item, setItem] = useState(["umar", "farooq", "jutt_j"])
+    const [item, setItem] = useState([])
 
     const updateItem = (items) => {
         const neeItem = [...item, items]
@@ -14,8 +14,9 @@ function DrapliftingPrent() {
 
     return (
         <>
-            <DrapliftingChild item={item} updateItem={updateItem} />
+                        <CheckLengthAry item={item} />
 
+            <DrapliftingChild item={item} updateItem={updateItem} />
         </>
 
     )

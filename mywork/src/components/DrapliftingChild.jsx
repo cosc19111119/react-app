@@ -3,9 +3,15 @@ import { useState } from "react"
 function DrapliftingChild(props) {
  const [input,setInput]=useState("");
 
-const handlInput=()=>{
-    props.updateItem(input)
-    setInput("")
+ const handlInput=()=>{
+    if (input !== "") {
+        props.updateItem(input);
+        setInput("");
+      } else {
+        alert("input the value")
+      }
+    // props.updateItem(input)
+    // setInput("")
 }
 
     return (
@@ -24,7 +30,7 @@ const handlInput=()=>{
             <ul>
                 {
                     props.item.map((Element, index) => {
-                        return <li key={index}>{Element} </li>
+                        return <li className="liStyle" key={index}>{Element} </li>
                     })
                 }
 
