@@ -3,27 +3,23 @@ import UserStatus from "./UserStatus";
 
 function Showtxt() {
 
-    const [user,setUser]=useState(null)
+    const [user,setUser]=useState("")
     const [login, setLogin] = useState(false);
 
-  const logAli = () => {
-    setUser('Ali');
+  const handlsetLog = (user) => {
+    setUser(user);
     setLogin(true)
   }
 
-  const logAslam = () => {
-    setUser('Aslam');
-    setLogin(true)
-
-  }
+ 
 
   return (
     <div>
        
       
-      <button onClick={logAli}>Login as Ali</button>
-      <button onClick={logAslam}>Login as Aslam</button>
-      <UserStatus user={user} />
+      <button onClick={()=>{handlsetLog("Ali")}}>Login as Ali</button>
+      <button onClick={()=>{handlsetLog("Aslam")}}>Login as Aslam</button>
+      <UserStatus user={user} login={login} setLogin={setLogin} />
     </div>
   );
 }
